@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.6 on darwin)" generated="20230802 20:55:10.407" rpa="false" schemaversion="3">
+<suite id="s1" name="SuiteC" source="/Users/muhammadinaam/PycharmProjects/LG_Automation/Tests/SuiteC.robot">
+<test id="s1-t1" name="Steps for open LG application" line="18">
+<kw name="Open the LG application Simulator3" library="Data">
+<kw name="Open Application" library="AppiumLibrary">
+<var>${appium3}</var>
+<arg>${appiumserver}</arg>
+<arg>udid=${iPhone 14 Pro_Simulator_UDID_3}</arg>
+<arg>deviceName=${deviceName_iPhone14Pro_3}</arg>
+<arg>platformName=${platformName_Simulator}</arg>
+<arg>platformVersion=${platformVersion14}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>app=${app}</arg>
+<arg>noReset=${noReset}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20230802 20:55:29.553" level="INFO">${appium3} = 1</msg>
+<status status="PASS" starttime="20230802 20:55:10.801" endtime="20230802 20:55:29.554"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${appium3}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230802 20:55:29.555" level="INFO">${appium3} = 1</msg>
+<status status="PASS" starttime="20230802 20:55:29.555" endtime="20230802 20:55:29.555"/>
+</kw>
+<status status="PASS" starttime="20230802 20:55:10.801" endtime="20230802 20:55:29.556"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 20:55:33.557" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230802 20:55:29.556" endtime="20230802 20:55:33.557"/>
+</kw>
+<status status="PASS" starttime="20230802 20:55:10.800" endtime="20230802 20:55:33.558"/>
+</test>
+<test id="s1-t2" name="TestCase4: Open the Newsfeed screen" line="21">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Happy Ending3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230802 20:55:33.560" endtime="20230802 20:55:33.560"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Newsfeed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 20:55:33.563" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Home"]'.</msg>
+<msg timestamp="20230802 20:55:34.969" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Home"]</msg>
+<status status="PASS" starttime="20230802 20:55:33.560" endtime="20230802 20:55:34.969"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 20:55:37.970" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230802 20:55:34.969" endtime="20230802 20:55:37.970"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Giving List Webview is opened successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230802 20:55:37.970" endtime="20230802 20:55:37.971"/>
+</kw>
+<status status="PASS" starttime="20230802 20:55:33.559" endtime="20230802 20:55:37.971"/>
+</test>
+<status status="PASS" starttime="20230802 20:55:10.410" endtime="20230802 20:55:37.972"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="SuiteC">SuiteC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230809 19:54:18.498" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ST2" source="/Users/muhammadinaam/PycharmProjects/LG_Automation/Tests/ST2.robot">
+<test id="s1-s1-t1" line="24">
+<status status="FAIL" starttime="20230809 19:54:18.807" endtime="20230809 19:54:18.807">Test name cannot be empty.</status>
+</test>
+<test id="s1-s1-t2" name="Steps for open LG application" line="25">
+<kw name="Open the LG application Simulator2" library="Data">
+<kw name="Open Application" library="AppiumLibrary">
+<var>${appium2}</var>
+<arg>${appiumServer1}</arg>
+<arg>udid=${iPhone 14 Pro Max_Simulator_UDID_2}</arg>
+<arg>deviceName=${deviceName_iPhone14ProMax_2}</arg>
+<arg>platformName=${platformName_Simulator}</arg>
+<arg>platformVersion=${platformVersion14}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>app=${app}</arg>
+<arg>noReset=${noReset}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20230809 19:54:38.775" level="INFO">${appium2} = 1</msg>
+<status status="PASS" starttime="20230809 19:54:18.808" endtime="20230809 19:54:38.775"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${appium2}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230809 19:54:38.776" level="INFO">${appium2} = 1</msg>
+<status status="PASS" starttime="20230809 19:54:38.775" endtime="20230809 19:54:38.776"/>
+</kw>
+<status status="PASS" starttime="20230809 19:54:18.808" endtime="20230809 19:54:38.776"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230809 19:54:42.777" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230809 19:54:38.776" endtime="20230809 19:54:42.778"/>
+</kw>
+<status status="PASS" starttime="20230809 19:54:18.807" endtime="20230809 19:54:42.778"/>
+</test>
+<status status="FAIL" starttime="20230809 19:54:18.521" endtime="20230809 19:54:42.779"/>
+</suite>
+<status status="FAIL" starttime="20230809 19:54:18.505" endtime="20230809 19:54:42.780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="ST2">Suites.ST2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

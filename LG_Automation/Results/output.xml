@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230802 18:53:52.015" rpa="false" schemaversion="3">
+<suite id="s1" name="LGAutomation" source="/Users/muhammadinaam/PycharmProjects/LG_Automation/TestCases/LGAutomation.robot">
+<test id="s1-t1" name="Steps for open LG application" line="18">
+<kw name="Open the LG application Simulator1" library="Data">
+<kw name="Open Application" library="AppiumLibrary">
+<var>${appium1}</var>
+<arg>${appiumserver}</arg>
+<arg>udid=${iPhone14_Simulator_UDID_1}</arg>
+<arg>deviceName=${deviceName_iPhone14_1}</arg>
+<arg>platformName=${platformName_Simulator}</arg>
+<arg>platformVersion=${platformVersion14}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>app=${app}</arg>
+<arg>noReset=${noReset}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20230802 18:54:01.312" level="INFO">${appium1} = 1</msg>
+<status status="PASS" starttime="20230802 18:53:52.324" endtime="20230802 18:54:01.312"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${appium1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230802 18:54:01.312" level="INFO">${appium1} = 1</msg>
+<status status="PASS" starttime="20230802 18:54:01.312" endtime="20230802 18:54:01.312"/>
+</kw>
+<status status="PASS" starttime="20230802 18:53:52.324" endtime="20230802 18:54:01.312"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:03.313" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230802 18:54:01.312" endtime="20230802 18:54:03.313"/>
+</kw>
+<status status="PASS" starttime="20230802 18:53:52.324" endtime="20230802 18:54:03.313"/>
+</test>
+<test id="s1-t2" name="TestCase1: Open Profile and Complete SignUp Flow" line="23">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Profile_tab}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:03.317" level="INFO">Clicking element 'xpath=//XCUIElementTypeImage[@name="profile-unselected"]'.</msg>
+<msg timestamp="20230802 18:54:04.581" level="INFO">xpath criteria: //XCUIElementTypeImage[@name="profile-unselected"]</msg>
+<status status="PASS" starttime="20230802 18:54:03.314" endtime="20230802 18:54:04.582"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:05.584" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230802 18:54:04.582" endtime="20230802 18:54:05.584"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Profilescreen_SignUp_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:05.587" level="INFO">Clicking element 'xpath=//XCUIElementTypeStaticText[@name="Sign Up"]'.</msg>
+<msg timestamp="20230802 18:54:06.815" level="INFO">xpath criteria: //XCUIElementTypeStaticText[@name="Sign Up"]</msg>
+<status status="PASS" starttime="20230802 18:54:05.584" endtime="20230802 18:54:06.816"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${SignUp_Screen}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230802 18:54:07.814" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:06.816" endtime="20230802 18:54:07.814"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${FirstName_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:07.816" level="INFO">Clicking element 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField'.</msg>
+<msg timestamp="20230802 18:54:09.381" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:07.814" endtime="20230802 18:54:09.382"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${FirstName_Input_field}</arg>
+<arg>${Signup_FirstName}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:09.385" level="INFO">Typing text 'Inaam' into text field 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField'</msg>
+<msg timestamp="20230802 18:54:11.392" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:09.382" endtime="20230802 18:54:11.392"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LastName_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:11.394" level="INFO">Clicking element 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField'.</msg>
+<msg timestamp="20230802 18:54:13.047" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:11.393" endtime="20230802 18:54:13.047"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LastName_Input_field}</arg>
+<arg>${SignUp_LastName}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:13.049" level="INFO">Typing text 'Ullah' into text field 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField'</msg>
+<msg timestamp="20230802 18:54:14.582" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:13.047" endtime="20230802 18:54:14.582"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignupEmail_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:14.585" level="INFO">Clicking element 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField'.</msg>
+<msg timestamp="20230802 18:54:16.303" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:14.583" endtime="20230802 18:54:16.304"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SignupEmail_Input_field}</arg>
+<arg>${SignUp_Email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:16.306" level="INFO">Typing text 'inaamiu89@gmail.com' into text field 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField'</msg>
+<msg timestamp="20230802 18:54:18.321" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeTextField</msg>
+<status status="PASS" starttime="20230802 18:54:16.304" endtime="20230802 18:54:18.321"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignUpPassword_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:18.323" level="INFO">Clicking element 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeSecureTextField'.</msg>
+<msg timestamp="20230802 18:54:19.983" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeSecureTextField</msg>
+<status status="PASS" starttime="20230802 18:54:18.321" endtime="20230802 18:54:19.983"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SignUpPassword_Input_field}</arg>
+<arg>${SignUp_Password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:19.986" level="INFO">Typing text '123456' into text field 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeSecureTextField'</msg>
+<msg timestamp="20230802 18:54:21.702" level="INFO">xpath criteria: //XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeSecureTextField</msg>
+<status status="PASS" starttime="20230802 18:54:19.983" endtime="20230802 18:54:21.702"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:23.704" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230802 18:54:21.702" endtime="20230802 18:54:23.704"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignUp_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:23.707" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Sign Up"]'.</msg>
+<msg timestamp="20230802 18:54:25.320" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Sign Up"]</msg>
+<status status="PASS" starttime="20230802 18:54:23.704" endtime="20230802 18:54:25.320"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:30.320" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230802 18:54:25.320" endtime="20230802 18:54:30.321"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${User_Profile}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<msg timestamp="20230802 18:54:30.686" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Settings"]</msg>
+<status status="PASS" starttime="20230802 18:54:30.321" endtime="20230802 18:54:30.686"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User Registered successfully!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230802 18:54:30.686" endtime="20230802 18:54:30.686"/>
+</kw>
+<status status="PASS" starttime="20230802 18:54:03.314" endtime="20230802 18:54:30.686"/>
+</test>
+<test id="s1-t3" name="TestCase2:Logout the user and prepare for login" line="44">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Settings}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:30.689" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Settings"]'.</msg>
+<msg timestamp="20230802 18:54:31.772" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Settings"]</msg>
+<status status="PASS" starttime="20230802 18:54:30.687" endtime="20230802 18:54:31.772"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:33.773" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230802 18:54:31.773" endtime="20230802 18:54:33.774"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Logout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:33.777" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Logout"]'.</msg>
+<msg timestamp="20230802 18:54:34.984" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Logout"]</msg>
+<status status="PASS" starttime="20230802 18:54:33.774" endtime="20230802 18:54:34.984"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Logout_pop_up}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230802 18:54:35.859" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Yes"]</msg>
+<status status="PASS" starttime="20230802 18:54:34.985" endtime="20230802 18:54:35.859"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Logout_pop_up}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230802 18:54:35.861" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Yes"]'.</msg>
+<msg timestamp="20230802 18:54:37.256" level="INFO">xpath criteria: //XCUIElementTypeButton[@name="Yes"]</msg>
+<status status="PASS" starttime="20230802 18:54:35.859" endtime="20230802 18:54:37.256"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User is Logged out successfully.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230802 18:54:37.257" endtime="20230802 18:54:37.257"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>13s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230802 18:54:50.258" level="INFO">Slept 13 seconds</msg>
+<status status="PASS" starttime="20230802 18:54:37.257" endtime="20230802 18:54:50.258"/>
+</kw>
+<status status="PASS" starttime="20230802 18:54:30.687" endtime="20230802 18:54:50.258"/>
+</test>
+<test id="s1-t4" name="TestCase3: Open Profile and verify the Login Flow" line="52">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" starttime="20230802 18:54:50.259" endtime="20230802 18:54:50.709"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Email_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.709" endtime="20230802 18:54:50.709"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.709" endtime="20230802 18:54:50.709"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${Email_Input_field}</arg>
+<arg>${LoginEmail}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.709" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Password_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${Password_Input_field}</arg>
+<arg>${LoginPassword}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>14s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Login_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${User_Profile}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User is Logged In successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.710" endtime="20230802 18:54:50.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230802 18:54:50.711" endtime="20230802 18:54:50.711"/>
+</kw>
+<status status="FAIL" starttime="20230802 18:54:50.258" endtime="20230802 18:54:50.711">Execution terminated by signal</status>
+</test>
+<test id="s1-t5" name="TestCase4: Open the Newsfeed screen" line="65">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230802 18:54:50.711" endtime="20230802 18:54:50.711">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="TestCase5: Verify Newsfeed screen is opened?" line="71">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230802 18:54:50.711" endtime="20230802 18:54:50.712">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="TestCase6: Show the total count of donations" line="77">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230802 18:54:50.712" endtime="20230802 18:54:50.712">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="TestCase7: Open the Discover screen" line="80">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230802 18:54:50.712" endtime="20230802 18:54:50.712">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="TestCase8: Verify and Open the Giving List screen" line="84">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230802 18:54:50.713" endtime="20230802 18:54:50.713">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20230802 18:53:52.016" endtime="20230802 18:54:50.713"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="3" fail="6" skip="0" id="s1" name="LGAutomation">LGAutomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

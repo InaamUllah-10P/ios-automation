@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230614 17:06:02.835" rpa="false" schemaversion="3">
+<suite id="s1" name="LGAutomation" source="/Users/muhammadinaam/PycharmProjects/LG_Automation/TestCases/LGAutomation.robot">
+<test id="s1-t1" name="Steps for open LG application" line="19">
+<kw name="Open the LG application Simulator" library="Data">
+<kw name="Open Application" library="AppiumLibrary">
+<var>${appium1}</var>
+<arg>${appiumserver}</arg>
+<arg>udid=${iPhone14_Simulator_UDID}</arg>
+<arg>deviceName=${deviceName_iPhone14}</arg>
+<arg>platformName=${platformName_Simulator}</arg>
+<arg>platformVersion=${platformVersion14}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>app=${app}</arg>
+<arg>noReset=${noReset}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:06.921" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:06.920" endtime="20230614 17:06:06.927"/>
+</kw>
+<msg timestamp="20230614 17:06:06.929" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:06.929" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/var/folders/1b/tpk30q5n5bb_f8hph5fbnnmh0000gn/T/2023514-27962-loq4z3.0dv3h/calculator.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/var/folders/1b/tpk30q5n5bb_f8hph5fbnnmh0000gn/T/2023514-27962-loq4z3.0dv3h/calculator.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</msg>
+<status status="FAIL" starttime="20230614 17:06:03.146" endtime="20230614 17:06:06.930"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${appium1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.930" endtime="20230614 17:06:06.930"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:03.145" endtime="20230614 17:06:06.930"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.931" endtime="20230614 17:06:06.931"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:03.145" endtime="20230614 17:06:06.931">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/var/folders/1b/tpk30q5n5bb_f8hph5fbnnmh0000gn/T/2023514-27962-loq4z3.0dv3h/calculator.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/var/folders/1b/tpk30q5n5bb_f8hph5fbnnmh0000gn/T/2023514-27962-loq4z3.0dv3h/calculator.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</status>
+</test>
+<test id="s1-t2" name="TestCase1: Open Profile and Complete SignUp Flow" line="24">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Profile_tab}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:06.933" level="INFO">Clicking element 'xpath=//XCUIElementTypeImage[@name="profile-unselected"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:06.934" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:06.933" endtime="20230614 17:06:06.935"/>
+</kw>
+<msg timestamp="20230614 17:06:06.937" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:06.937" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:06.931" endtime="20230614 17:06:06.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.938" endtime="20230614 17:06:06.938"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Profilescreen_SignUp_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.938" endtime="20230614 17:06:06.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${SignUp_Screen}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.938" endtime="20230614 17:06:06.938"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${FirstName_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.938" endtime="20230614 17:06:06.938"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${FirstName_Input_field}</arg>
+<arg>${Signup_FirstName}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LastName_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LastName_Input_field}</arg>
+<arg>${SignUp_LastName}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignupEmail_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SignupEmail_Input_field}</arg>
+<arg>${SignUp_Email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignUpPassword_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.939"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SignUpPassword_Input_field}</arg>
+<arg>${SignUp_Password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.939" endtime="20230614 17:06:06.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.940" endtime="20230614 17:06:06.940"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SignUp_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.940" endtime="20230614 17:06:06.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.940" endtime="20230614 17:06:06.940"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${User_Profile}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.940" endtime="20230614 17:06:06.940"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User Registered successfully!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.940" endtime="20230614 17:06:06.940"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:06.931" endtime="20230614 17:06:06.941">No application is open</status>
+</test>
+<test id="s1-t3" name="TestCase2:Logout the user and prepare for login" line="45">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Settings}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:06.944" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Settings"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:06.944" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:06.944" endtime="20230614 17:06:06.945"/>
+</kw>
+<msg timestamp="20230614 17:06:06.947" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:06.947" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:06.941" endtime="20230614 17:06:06.948"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.948" endtime="20230614 17:06:06.948"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Logout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.948" endtime="20230614 17:06:06.948"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Logout_pop_up}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.948" endtime="20230614 17:06:06.948"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Logout_pop_up}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.949" endtime="20230614 17:06:06.949"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User is Logged out successfully.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.949" endtime="20230614 17:06:06.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>13s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:06.949" endtime="20230614 17:06:06.949"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:06.941" endtime="20230614 17:06:06.949">No application is open</status>
+</test>
+<test id="s1-t4" name="TestCase3: Open Profile and verify the Login Flow" line="53">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230614 17:06:09.952" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230614 17:06:06.950" endtime="20230614 17:06:09.952"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Email_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:09.954" level="INFO">Clicking element 'xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:09.954" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.954" endtime="20230614 17:06:09.955"/>
+</kw>
+<msg timestamp="20230614 17:06:09.956" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.956" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.952" endtime="20230614 17:06:09.957"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.957" endtime="20230614 17:06:09.957"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${Email_Input_field}</arg>
+<arg>${LoginEmail}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.957" endtime="20230614 17:06:09.957"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Password_Input_field}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.957" endtime="20230614 17:06:09.957"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${Password_Input_field}</arg>
+<arg>${LoginPassword}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.957" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>14s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Login_Button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${User_Profile}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>User is Logged In successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.958" endtime="20230614 17:06:09.958"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:06.949" endtime="20230614 17:06:09.958">No application is open</status>
+</test>
+<test id="s1-t5" name="TestCase4: Open the Newsfeed screen" line="66">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Newsfeed}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:09.961" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Home"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:09.962" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.961" endtime="20230614 17:06:09.962"/>
+</kw>
+<msg timestamp="20230614 17:06:09.964" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.964" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.959" endtime="20230614 17:06:09.964"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:09.965" endtime="20230614 17:06:09.965"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:09.959" endtime="20230614 17:06:09.965">No application is open</status>
+</test>
+<test id="s1-t6" name="TestCase5: Verify Newsfeed screen is opened?" line="72">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Donor_feed}</var>
+<arg>Page Should Contain Text</arg>
+<arg>Donor Feed</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Donor Feed</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:09.966" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.966" endtime="20230614 17:06:09.966"/>
+</kw>
+<msg timestamp="20230614 17:06:09.968" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:09.969" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.968" endtime="20230614 17:06:09.969"/>
+</kw>
+<msg timestamp="20230614 17:06:09.971" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.971" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:09.966" endtime="20230614 17:06:09.972"/>
+</kw>
+<msg timestamp="20230614 17:06:09.972" level="INFO">${Donor_feed} = False</msg>
+<status status="PASS" starttime="20230614 17:06:09.965" endtime="20230614 17:06:09.972"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Donor_feed}' == 'True'</arg>
+<arg>Log To Console</arg>
+<arg>Newsfeed screen is opened successfully</arg>
+<arg>ELSE</arg>
+<arg>Log To Console</arg>
+<arg>Newsfeed screen isn't opened.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Newsfeed screen isn't opened.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230614 17:06:09.972" endtime="20230614 17:06:09.972"/>
+</kw>
+<status status="PASS" starttime="20230614 17:06:09.972" endtime="20230614 17:06:09.972"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Newsfeed screen is opened successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230614 17:06:09.972" endtime="20230614 17:06:09.972"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230614 17:06:11.973" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230614 17:06:09.973" endtime="20230614 17:06:11.973"/>
+</kw>
+<status status="PASS" starttime="20230614 17:06:09.965" endtime="20230614 17:06:11.974"/>
+</test>
+<test id="s1-t7" name="TestCase6: Show the total count of donations" line="78">
+<kw name="Get the Total Count of the donations Newsfeed" library="Keywords">
+<kw name="Get Matching Xpath Count" library="AppiumLibrary">
+<var>${total_count_of_Donations}</var>
+<arg>xpath=//XCUIElementTypeApplication[@name="LaunchGood"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeOther[1]/XCUIElementTypeOther</arg>
+<doc>Returns number of elements matching ``xpath``</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:11.975" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.975" endtime="20230614 17:06:11.976"/>
+</kw>
+<msg timestamp="20230614 17:06:11.977" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.978" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.975" endtime="20230614 17:06:11.978"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Current count of donations=${total_count_of_Donations}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.978" endtime="20230614 17:06:11.978"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${total_count_of_Donations}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.978" endtime="20230614 17:06:11.978"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:11.974" endtime="20230614 17:06:11.978"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.978" endtime="20230614 17:06:11.978"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:11.974" endtime="20230614 17:06:11.979">No application is open</status>
+</test>
+<test id="s1-t8" name="TestCase7: Open the Discover screen" line="81">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Discover}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:11.981" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Discover"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:11.981" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.981" endtime="20230614 17:06:11.982"/>
+</kw>
+<msg timestamp="20230614 17:06:11.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.983" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.979" endtime="20230614 17:06:11.984"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.984" endtime="20230614 17:06:11.984"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Discover screen is opened successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.984" endtime="20230614 17:06:11.984"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:11.979" endtime="20230614 17:06:11.984">No application is open</status>
+</test>
+<test id="s1-t9" name="TestCase8: Verify and Open the Giving List screen" line="85">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Giving_List}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230614 17:06:11.986" level="INFO">Clicking element 'xpath=//XCUIElementTypeButton[@name="Giving List"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230614 17:06:11.986" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.986" endtime="20230614 17:06:11.987"/>
+</kw>
+<msg timestamp="20230614 17:06:11.989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.989" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230614 17:06:11.985" endtime="20230614 17:06:11.989"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.989" endtime="20230614 17:06:11.989"/>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${current_screen}</var>
+<arg>${title}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.989" endtime="20230614 17:06:11.989"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Giving List Webview is opened successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.989" endtime="20230614 17:06:11.989"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Automation Ended</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230614 17:06:11.990" endtime="20230614 17:06:11.990"/>
+</kw>
+<status status="FAIL" starttime="20230614 17:06:11.984" endtime="20230614 17:06:11.990">No application is open</status>
+</test>
+<status status="FAIL" starttime="20230614 17:06:02.836" endtime="20230614 17:06:11.990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="8" skip="0" id="s1" name="LGAutomation">LGAutomation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230614 17:06:06.929" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:06.937" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:06.947" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.956" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.964" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.968" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:09.971" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.977" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.983" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230614 17:06:11.989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

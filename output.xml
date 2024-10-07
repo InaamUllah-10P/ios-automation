@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on darwin)" generated="20231204 19:26:29.580" rpa="false" schemaversion="4">
+<suite id="s1" name="LGAutomation" source="/Users/muhammadinaam/PycharmProjects/React_Native_Automation/LG_Automation_Android/TestCases/LGAutomation.robot">
+<test id="s1-t1" name="Steps for open LG application" line="18">
+<kw name="Open the Airbnb application" library="Data">
+<kw name="Open Application" library="AppiumLibrary">
+<var>${appium}</var>
+<arg>${appiumServer1}</arg>
+<arg>udid=${Mi 11_UDID}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<arg>app=${app1}</arg>
+<arg>noReset=${noReset}</arg>
+<arg>adbExecTimeout=${adbExecTimeout}</arg>
+<arg>newCommandTimeout=${newCommandTimeout}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231204 19:26:57.618" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231204 19:26:57.618" endtime="20231204 19:26:57.625"/>
+</kw>
+<msg timestamp="20231204 19:26:57.627" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231204 19:26:57.627" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.airbnb.android' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.airbnb.android.feat.splashscreen.SplashScreenActivity' or 'com.airbnb.android.com.airbnb.android.feat.splashscreen.SplashScreenActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.airbnb.android' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.airbnb.android.feat.splashscreen.SplashScreenActivity' or 'com.airbnb.android.com.airbnb.android.feat.splashscreen.SplashScreenActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</msg>
+<status status="FAIL" starttime="20231204 19:26:29.878" endtime="20231204 19:26:57.627"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${appium3}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20231204 19:26:57.628" endtime="20231204 19:26:57.628"/>
+</kw>
+<status status="FAIL" starttime="20231204 19:26:29.878" endtime="20231204 19:26:57.628"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231204 19:26:57.628" endtime="20231204 19:26:57.628"/>
+</kw>
+<status status="FAIL" starttime="20231204 19:26:29.877" endtime="20231204 19:26:57.628">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.airbnb.android' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.airbnb.android.feat.splashscreen.SplashScreenActivity' or 'com.airbnb.android.com.airbnb.android.feat.splashscreen.SplashScreenActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.airbnb.android' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.airbnb.android.feat.splashscreen.SplashScreenActivity' or 'com.airbnb.android.com.airbnb.android.feat.splashscreen.SplashScreenActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+    at getResponseForW3CError (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)</status>
+</test>
+<status status="FAIL" starttime="20231204 19:26:29.581" endtime="20231204 19:26:57.629"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LGAutomation">LGAutomation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231204 19:26:57.627" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
